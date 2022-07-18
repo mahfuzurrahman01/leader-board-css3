@@ -232,6 +232,9 @@ tablet devices
         width: 100%;
 
     }
+    header{
+        width: 100%;
+    }
 
     .players,
     .courses {

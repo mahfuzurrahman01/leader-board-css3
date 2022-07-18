@@ -6,6 +6,35 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #F3F1FF;
 }
+header{
+    background-color: #562EFF;
+    width: 1440px;
+    height: 96px;
+    margin: 0px auto;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header img{
+    width: 41px;
+    height: 51px;
+}
+.navbar{
+    color: white;
+    font-size: 19px;
+    font-weight: 600;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap: 36px;
+    align-items: center;
+}
+
+.navbar img{
+    width: 51px;
+    height: 51px;
+   
+}
 
 main {
     display: flex;
@@ -114,12 +143,31 @@ courses style section start here
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 24px;
-    ;
+    justify-items: center;
+   
 }
 
 .course {
-    /* width: 252.42px;
-    height: 269.69px; */
+    width: 252.42px;
+    height: 269.69px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.course-author {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14.6913px;
+    color: #ED6B4F;
+}
+
+.course-duration {
+    background: #FFE4E8;
+    border-radius: 14.6913px;
+    padding: 6px;
+    color: #ED6B4F;
 }
 
 .course .course-banner img {
@@ -149,6 +197,14 @@ courses style section start here
 @media only screen and (max-width: 668px) {
     .container {
         width: 100%;
+    }
+    header{
+        width: 375px;
+        /* margin: 20px 0px 0px 10px; */
+        justify-content: space-between;
+    }
+    .navbar{
+        grid-column-gap: 6px;
     }
 
     .players,
